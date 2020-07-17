@@ -1,0 +1,6 @@
+{
+  "PREDICTION_URI": "http://127.0.0.1:5000",
+  "SERVER_URI": "http://localhost:2500",
+  "STORAGE_LINK": "http://localhost:9000",
+  "BUCKET_NAME": "beyondtalk"
+}

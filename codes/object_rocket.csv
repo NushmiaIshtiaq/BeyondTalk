@@ -1,0 +1,2 @@
+,__v,_id,anotherUserId,conversation,created_at,updated_at,userIdOne
+5efc650d267ed41fd7060267,0.0,5efc650d267ed41fd7060267,5eba99274714033190074b9d,"[{'_id': ObjectId('5efc650d267ed41fd7060268'), 'message': 'Hello\n', 'datetime': '30 Jun 2020 03:01 pm', 'sender': {'userId': ObjectId('5eba99274714033190074b9d'), 'name': 'Maria Imam', 'gender': 'female'}}]",2020-07-01 10:27:25.929,2020-07-01 10:27:25.929,5ea69e336891963e1c119af0

@@ -1,0 +1,40 @@
+{
+  "name": "beyondtalk-node-apis",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node app.js"
+  },
+  "repository": "https://github.com/samianushmia/beyondtalk-node-apis.git",
+  "author": "samianushmia <47587730+samianushmia@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@hapi/joi": "^15.1.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-form-data": "^2.0.10",
+    "jsonwebtoken": "^8.5.1",
+    "minio": "^7.0.10",
+    "mongoose": "^5.6.2",
+    "mongoose-paginate-v2": "^1.3.0",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^1.19.1"
+  }
+}

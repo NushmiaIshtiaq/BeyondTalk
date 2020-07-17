@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Datatables Example</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+  </head>
+  <body >
+    <h1 style="color: rgb(61, 245, 236, 1);">Harrassment Detection Results</h1>
+    <table
+      style="color: #b89eba; border-color: rgb(61, 245, 236, 1);"
+      id="example"
+      class="display"
+      style="width: 100%;"
+    >
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Chat Text</th>
+          <th>Name</th>
+          <th>gender</th>
+          <th>Time/Date</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>User ID</th>
+          <th>Chat Text</th>
+          <th>Name</th>
+          <th>gender</th>
+          <th>Time/Date</th>
+        </tr>
+      </tfoot>
+    </table>
+    <script>
+      function setupData() {
+        $(document).ready(function () {
+          $("#example").DataTable({
+            ajax: {
+              // "url": "static/objects2.txt", // This works for the static file
+              url: "/index_get_data", // This now works too thanks to @kthorngren
+              dataType: "json",
+              dataSrc: "",
+              contentType: "application/json",
+            },
+            columns: [
+              { data: "0" },
+              { data: "1" },
+              { data: "2" },
+              { data: "3" },
+              { data: "4" },
+            ],
+          });
+        });
+      }
+      $(window).on("load", setupData);
+    </script>
+  </body>
+</html>
